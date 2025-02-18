@@ -1,0 +1,106 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gym Powerhouse</title>
+  <!-- Link to the compiled CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Gym Powerhouse</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Log In</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home">
+    <div class="header-content">
+      <h1>Welcome to Gym Powerhouse</h1>
+      <p>Get fit, stay healthy, and achieve your personal best.</p>
+      <a href="#programs" class="btn">Explore Programs</a>
+    </div>
+    <div class="header-image">
+      <!-- Static stock image URL -->
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800" alt="Gym Fitness">
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        At Gym Powerhouse, we are dedicated to helping you achieve your fitness goals.
+        Our state-of-the-art facility and expert trainers provide you with everything you need
+        to train hard and live a healthy lifestyle.
+      </p>
+      <img src="https://images.unsplash.com/photo-1598268127214-74037a7d0c35?q=80&w=800" alt="Workout">
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs">
+    <div class="container">
+      <h2>Our Programs</h2>
+      <div class="program-list">
+        <div class="program">
+          <img src="https://images.unsplash.com/photo-1594737625785-cc6dc174d6f9?q=80&w=400" alt="Strength Training">
+          <h3>Strength Training</h3>
+          <p>Build muscle and power with our expert-guided strength routines.</p>
+        </div>
+        <div class="program">
+          <img src="https://images.unsplash.com/photo-1599058917212-d7761be49654?q=80&w=400" alt="Cardio Fitness">
+          <h3>Cardio Fitness</h3>
+          <p>Boost your endurance and burn calories with our high-energy cardio classes.</p>
+        </div>
+        <div class="program">
+          <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=400" alt="Yoga Classes">
+          <h3>Yoga Classes</h3>
+          <p>Improve flexibility and find your inner balance with our calming yoga sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>
+        Ready to get started? Reach out to us at <strong>contact@gympowerhouse.com</strong> or call us at <strong>(123) 456-7890</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Log In</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit" class="btn">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn">&#8679;</button>
+
+  <!-- Link to the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
