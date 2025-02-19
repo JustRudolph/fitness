@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Gym Powerhouse</title>
+  <!-- Link to the compiled CSS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    .login-box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .login-box .form-group {
+      margin-bottom: 15px;
+    }
+    .login-box .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .login-box .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .login-box .btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-box .btn:hover {
+      background-color: #0056b3;
+    }
+    .login-box .signup-link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="navbar-placeholder"></div>
+<script src="../Js/navbar.js"></script>
+
+  <!-- Header Section -->
+  <header id="home">
+    <div class="header-content">
+      <h1>Login</h1>
+      <p>Access your Gym Powerhouse account.</p>
+      <a href="../index.html" class="btn">Home</a>
+    </div>
+    <div class="header-image" style="margin-bottom: 20px;">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800" alt="Login">
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <section id="login">
+    <div class="container">
+      <h2>Login to Your Account</h2>
+      <div class="login-box">
+        <form action="/login" method="post">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <a href="/pages/signup.html" class="signup-link">New member? Sign up</a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2021 Gym Powerhouse. All rights reserved.</p>
+    </div>
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn">&#8679;</button>
+
+  <!-- Link to the JavaScript file -->
+  <script src="../script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
