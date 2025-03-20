@@ -1,0 +1,28 @@
+
+DROP DATABASE IF EXISTS `medewerker-overzicht`;
+
+    CREATE DATABASE `medewerker-overzicht`;
+
+    USE `medewerker-overzicht`;
+
+CREATE TABLE Medewerkers (
+    Id                   TINYINT         UNSIGNED       NOT NULL    PRIMARY KEY AUTO_INCREMENT
+    ,Naam                VARCHAR(255) NOT NULL
+    ,Leeftijd            TINYINT        UNSIGNED       NOT NULL
+    ,Email               VARCHAR(255) NOT NULL
+) ENGINE=InnoDB;
+
+
+INSERT INTO RijksteMensen
+(
+  Id
+,Naam
+,Leeftijd
+,Email
+)
+VALUES
+('1', 'Elon Musk', '407000000000', 53, ('Tesla, SpaceX, Xai, X'))
+     ,('2', 'Jeff Bezos', '233000000000', 61, ('Amazon, Blue Origin'))
+     ,('3', 'Larry Ellison', '189490000000', 79, ('Oracle, Tesla'))
+     ,('4', 'Mark Zuckerberg', '202000000000', 40, ('Meta Platforms'))
+     ,('5', 'Bernard Arnault', '169000000000', 75, ('Louis Vuitton'));
